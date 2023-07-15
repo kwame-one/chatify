@@ -5,7 +5,7 @@
 ### Software Requirements
 
 1. Python 3.9.6
-2. MySQL Server
+2. Postgres
 
 ---
 
