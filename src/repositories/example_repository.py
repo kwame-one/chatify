@@ -3,8 +3,8 @@ from typing import Annotated
 from fastapi import Depends
 from sqlalchemy.orm import Session
 
-from app.models.example import Example
-from app.repositories.base_repository import BaseRepository
+from src.models.example import Example
+from src.repositories.base_repository import BaseRepository
 from configs.database import get_db
 
 

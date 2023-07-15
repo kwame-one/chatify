@@ -1,4 +1,4 @@
-from app.controllers.example_controller import example_router
+from src.controllers.example_controller import example_router
 
 
 def register_routes(app):

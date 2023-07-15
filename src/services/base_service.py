@@ -1,6 +1,6 @@
 from abc import abstractmethod
 
-from app.exceptions.resource_not_found_exception import ResourceNotFoundException
+from src.exceptions.resource_not_found_exception import ResourceNotFoundException
 
 
 class BaseService:

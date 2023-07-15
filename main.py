@@ -1,9 +1,9 @@
 from fastapi import FastAPI
 from fastapi_pagination import add_pagination
 
-from app.controllers import register_routes
-from app.exceptions import register_exception_handlers
-from app.middlewares import register_middlewares
+from src.controllers import register_routes
+from src.exceptions import register_exception_handlers
+from src.middlewares import register_middlewares
 
 app = FastAPI()
 

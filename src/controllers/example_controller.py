@@ -4,9 +4,9 @@ from fastapi import APIRouter, Depends
 from fastapi_pagination import Page
 from starlette import status
 
-from app.dtos.example_dto import ExampleDto
-from app.requests.example_request import ExampleRequest
-from app.services.example_service import ExampleService
+from src.dtos.example_dto import ExampleDto
+from src.requests.example_request import ExampleRequest
+from src.services.example_service import ExampleService
 
 example_router = APIRouter()
 

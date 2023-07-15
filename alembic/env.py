@@ -7,7 +7,7 @@ from sqlalchemy import pool
 # this is the Alembic Config object, which provides
 # access to the values within the .ini file in use.
 from configs.app import settings
-from app.models.base import Base
+from src.models.base import Base
 
 config = context.config
 config.set_main_option(

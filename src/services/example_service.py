@@ -3,9 +3,9 @@ from typing import Annotated
 
 from fastapi import Depends
 
-from app.dtos.example_dto import ExampleDto
-from app.repositories.example_repository import ExampleRepository
-from app.services.base_service import BaseService
+from src.dtos.example_dto import ExampleDto
+from src.repositories.example_repository import ExampleRepository
+from src.services.base_service import BaseService
 
 
 class ExampleService(BaseService, ABC):
