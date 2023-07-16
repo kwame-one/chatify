@@ -16,6 +16,11 @@ async def index(service: Annotated[ExampleService, Depends(ExampleService)]):
     return service.find_all()
 
 
+@example_router.get('/{id}', tags=['Examples'])
+async def find(id, service: Annotated[ExampleService, Depends(ExampleService)]):
+    return service.find(id)
+
+
 @example_router.post('', tags=['Examples'])
 async def store(example_request: ExampleRequest,
                 service: Annotated[ExampleService, Depends(ExampleService)]) -> ExampleDto:

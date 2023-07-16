@@ -14,7 +14,7 @@ class BaseService:
         resource = self.repository.find(id)
         if resource is None:
             raise ResourceNotFoundException(description='Resource not found')
-        return self.get_dto().model_validate(resource).dict()
+        return self.get_dto().model_validate(resource)
 
     def update(self, id, data):
         resource = self.repository.find(id)
