@@ -34,6 +34,6 @@ async def update(id,
     return service.update(id, example_request.model_dump())
 
 
-@example_router.delete('/{id}', tags=['Examples'], status_code=status.HTTP_204_NO_CONTENT)
+@example_router.delete('/{id}', status_code=status.HTTP_204_NO_CONTENT)
 async def destroy(id, service: Annotated[ExampleService, Depends(ExampleService)]) -> None:
     return service.delete(id)
