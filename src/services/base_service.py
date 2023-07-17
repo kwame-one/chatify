@@ -36,4 +36,4 @@ class BaseService:
 
     @abstractmethod
     def get_dto(self):
-        pass
+        ...
