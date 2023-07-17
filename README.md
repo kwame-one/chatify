@@ -46,5 +46,5 @@ alembic upgrade head
 ```
 5. Run application
 ```shell
-uvicorn main:src --reload
+uvicorn main:app --reload
 ```
